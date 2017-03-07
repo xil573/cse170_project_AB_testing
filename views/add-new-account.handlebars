@@ -1,18 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
     <title>Search account</title>
 	<link rel="stylesheet" href="/css/add_new_account.css" />
-	<link rel="stylesheet" href="/css/HomePage.css" />
 	<script
   		src="https://code.jquery.com/jquery-3.1.1.min.js"
   		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   		crossorigin="anonymous"></script>
     <script src="/js/AddNewAccount.js"></script>
-    <script src="/js/HomePage.js"></script>
-    <script src = "/js/facebook.js"></script>
 </head>
 <body>
 	<nav id="nav_bar">
@@ -23,50 +20,18 @@
 					<div class="bar"></div>
 					<div class="bar"></div>
 				</div>
-				
+				<button id="back_button" class="click_button" onclick="backToAddContactPage()">
+					<strong>Back</strong>
+				</button>
 			</li>
 			<li id="nav_bar_middle">
 				<strong>Search new contact</strong>
 			</li>
 			<li id="nav_bar_right">
-				<button id="back_button" class="click_button" onclick="backToAddContactPage()">
-					<strong>Back</strong>
-				</button>
 			</li>
 		</ul>
 	</nav>
 	
-	<div id="side_bar_mask" class="mask" hidden="hidden" onclick="toggleSidebar()"></div>
-	<nav id="side_bar">
-		<ul>
-			<li id="album">
-				<button id="album_face_border" onclick = "changePageToMyProfile()">
-					<img id = "photo" class="contact_img" src="https://shechive.files.wordpress.com/2012/02/a-kitty-cat-7.jpg"/>
-				</button>
-			</li>
-			<li id="name">
-				<strong id = "name">Xindi</strong>
-			</li>
-			<li id="another_folder" class="side_bar_folder">
-				<button id="view_profile" class="side_bar_button" onclick="changePageToMyProfile()">
-					View my profile
-				</button>
-				<br>
-				<button id="groups" class="side_bar_button" onclick="changePageToGroups()">
-					Groups
-				</button>
-			</li>
-			<li id="settings_folder" class="side_bar_folder">
-				<button id="setting" class="side_bar_button" onclick="changePageToSettings()">
-					Settings
-				</button>
-				<br> 
-				<button id="log_off" class="side_bar_button" onclick="logOff()">
-					Log off
-				</button>
-			</li>
-		</ul>
-	</nav>
 	<main>
 		<ul id="search_package">
 			<li>
@@ -82,16 +47,5 @@
 			</li>
 		</ul>
 	</main>
-
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-93141438-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 	</body>
 </html>

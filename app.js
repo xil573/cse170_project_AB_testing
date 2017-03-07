@@ -61,21 +61,17 @@ app.get('/login', login.view);
 app.get('/contact/:id', contact.view);
 app.get('/add_new_account', add_new_account.view);
 app.get('/search_result', search_result.view);
-//app.get('/search_result', search_result.viewNoBar);
 app.get('/search_result_all', search_result_all.view);
-//app.get('/search_result_all', search_result_all.viewNoBar);
 app.get('/select_info', select_info.view);
-app.get('/select_info/nobar', select_info.viewNoBar);
 app.get('/confirm', confirm.view);
-//app.get('/confirm', confirm.viewNoBar);
 app.get('/done', done.view);
-//app.get('/done', done.viewNoBar);
-
 app.get('/create-account', create_new_acc.view);
 app.get('/edit-profile', edit_profile.view);
-app.post('/addInfo', edit_profile.addInfo);
-//app.get('/add', add.addInfo);
-
+app.get('/add', add.addInfo);
+//app.get('/project/:id', project.projectInfo);
+//app.get('/palette', palette.randomPalette);
+// Example route
+// app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

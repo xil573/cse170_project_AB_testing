@@ -1,27 +1,4 @@
-﻿$(document).ready(function() {
-$('#addFriendForm').submit(function(e) {
-    // Prevents default submit + reload (we only want the submit part)
-    e.preventDefault();
-
-    var type = $('#type').val();
-    var usage = $('#usage').val();
-    var content = $('#content').val();
-
-    // Send the POST request
-    $.post('addInfo', { type: type, usage: usage, content: content }, postCallback);
-  });
-});
-
-function postCallback(res) {
-    //console.log(res);
-    //$('.newlist').append('<li>' + res + '</li>'); // Add to the list
-
-    $('#addFriendForm').val(''); // Clear form
-    window.location.href = "/my-profile";
-}
-
-
-function add() {
+﻿function add() {
     var success = 0;
     var url = window.location.href;
     var index = url.indexOf("/edit-profile/");
@@ -53,7 +30,7 @@ function add() {
     //        }
     //    }
     //}  
-    window.location.href = "/my-profile";
+    window.location.href = "my-profile";
 }
 
 function review(result) {

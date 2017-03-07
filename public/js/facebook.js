@@ -34,7 +34,6 @@ function changeUser(response){
 }
 
 function toggleSidebar() {
-    $("#bar").click(bar_func);
     var $sideBar = $("#side_bar");
     var $sideBarMask = $("#side_bar_mask");
     var $topBar = $("#top_bar");
@@ -54,11 +53,6 @@ function toggleSidebar() {
       $("#name").text(name);
       $("#photo").attr('src', pic_url);
     }
-
     //console.log(window.varName);
     //console.log(name);
-}
-function bar_func(event){
-    console.log("in bar_func");
-    ga('send', 'event', 'menubar', 'click');
 }

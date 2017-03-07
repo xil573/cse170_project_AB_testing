@@ -1,4 +1,18 @@
-﻿function toggleNewContact() {
+﻿function preprocess() {
+    //var url = window.location.href;
+    //if (url.includes("id")) {
+     //   console.log(url);
+    //} else {
+    //    window.location.href = "login";
+    //}
+}
+//window.onpaint = preprocess();
+
+//function toggleSidebar() {
+    
+//}
+
+function toggleNewContact() {
     var $sideBar = $("#side_bar");
     var $sideBarMask = $("#side_bar_mask");
     var $topBar = $("#top_bar");
