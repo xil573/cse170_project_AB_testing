@@ -20,6 +20,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
     <title>Contact Exchange</title>
 	<link rel="stylesheet" href="css/HomePage.css" />
+	<link rel="stylesheet" href="/css/settings.css" />
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
             crossorigin="anonymous"></script>
@@ -59,7 +60,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			</li>
 			<li id="name">
 				{{#each users}}
-				<strong id = "name">{{username}}</strong>
+				<h2 id = "name">{{username}}</h2>
 				{{/each}}
 			</li>
 			<li id="another_folder" class="side_bar_folder">
@@ -107,7 +108,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
                 <li class="contact_item">
                 	<a href="contact/{{id}}" class="thumbnail">
                 		
-						<p>{{name}}</p>
+						<h4>{{name}}</h4>
 					</a>
                 	<!--
                     <button id="{{id}}" onclick="changePageToContact(this)">
@@ -153,7 +154,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		-->
 			<li id="name">
 				{{#each users}}
-				<strong id = "name">{{username}}</strong>
+				<h2 id = "name">{{username}}</h2>
 				{{/each}}
 			</li>
 			<li id="another_folder" class="side_bar_folder">
@@ -201,7 +202,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
                 <li class="contact_item">
                 	<a href="contact/{{id}}" class="thumbnail">
                 		
-						<p>{{name}}</p>
+						<h4>{{name}}</h4>
 					</a>
                 	<!--
                     <button id="{{id}}" onclick="changePageToContact(this)">

@@ -27,19 +27,44 @@
 		</ul>
 	</nav>
 	<main>
-		<h3>Please select the DEFAULT information you want to send out:</h3>
-		<ul id="contact_info_list">
-			<form>
-  				<input id = "phone" type="checkbox" name="way" value="phone"> Phone Number<br>
-  				<input id = "email" type="checkbox" name="way" value="email"> Email Address<br>
-  				<input id = "facebook" type="checkbox" name="way" value="facebook"> Facebook<br>
-  				<input id = "linkedin" type="checkbox" name="way" value="linkedin"> LinkedIn<br>
-  				<input id = "wechat" type="checkbox" name="way" value="wechat"> WeChat<br>
-  				<input id = "instagram" type="checkbox" name="way" value="instagram"> Instagram<br>
-  				<br>
+		<div class="container">
+			<div class="control-group">
+				<h2>Please select the DEFAULT information you want to send out:</h2>
+				<!--
+				<ul id="contact_info_list">
+				-->
+					<form>
+						<label class="control control--checkbox"><h4>Phone Number</h4>
+	  						<input id = "phone" type="checkbox" name="way" value="phone">
+	  						<div class="control__indicator"></div>
+    					</label>
+    					<label class="control control--checkbox"><h4>Email Address</h4>
+  							<input id = "email" type="checkbox" name="way" value="email">
+  							<div class="control__indicator"></div>
+    					</label>
+    					<label class="control control--checkbox"><h4>Facebook</h4>
+	  						<input id = "facebook" type="checkbox" name="way" value="facebook">
+	  						<div class="control__indicator"></div>
+    					</label>
+    					<label class="control control--checkbox"><h4>LinkedIn</h4>
+	  						<input id = "linkedin" type="checkbox" name="way" value="linkedin">
+	  						<div class="control__indicator"></div>
+    					</label>
+    					<label class="control control--checkbox"><h4>WeChat</h4>
+	  						<input id = "wechat" type="checkbox" name="way" value="wechat">
+	  						<div class="control__indicator"></div>
+    					</label>
+    					<label class="control control--checkbox"><h4>Instagram</h4>
+	  						<input id = "instagram" type="checkbox" name="way" value="instagram">
+	  						<div class="control__indicator"></div>
+    					</label>
   				<!--<button class="click_button" onclick="checkFunc()">OK</button> -->
-			</form>
-		</ul>
+					</form>
+					<!--
+				</ul>
+			-->
+			</div>
+		</div>
 	</main>
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

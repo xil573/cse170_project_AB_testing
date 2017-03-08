@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
     <title>Groups</title>
 	<link rel="stylesheet" href="/css/groups.css" />
+	<link rel="stylesheet" href="/css/settings.css" />
 	<script
   		src="https://code.jquery.com/jquery-3.1.1.min.js"
   		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -31,7 +32,7 @@
 			<div class="group" id="{{id}}">
 				<div class = thumbnail>
                 	<a href="#">
-						<p>{{gname}}</p>
+						<h2>{{gname}}</h2>
 					</a>
 					
                 	<!--
@@ -45,6 +46,8 @@
             </div>
             {{/each}}
             <div class="details"></div>
+            <input type="button" value="Add Group">
+            <input type="button" value="Delete Group">
 	</main>
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
     <title>Select contact info</title>
 	<link rel="stylesheet" href="/css/search_result.css" />
+	<link rel="stylesheet" href="/css/settings.css" />
 	<script
   		src="https://code.jquery.com/jquery-3.1.1.min.js"
   		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -32,20 +33,39 @@
 	</nav>
 
 	<main>
-		<h3>Please select the information you want to send out:</h3>
-		<ul id="contact_info_list">			
-			<form>
-  				<input id = "1" type="checkbox" name="way" value="phone"> Phone Number<br>
-  				<input id = "2" type="checkbox" name="way" value="email"> Email Address<br>
-  				<input id = "3" type="checkbox" name="way" value="facebook"> Facebook<br>
-  				<input id = "4" type="checkbox" name="way" value="linkedin"> LinkedIn<br>
-  				<input id = "5" type="checkbox" name="way" value="wechat"> WeChat<br>
-  				<input id = "6" type="checkbox" name="way" value="instagram"> Instagram<br>
-  				<!--<input type="submit" value="Submit"> -->
-  				<br>
-  				<!--<button class="click_button" onclick="importDefault()">OK</button>-->
-			</form>
-		</ul>
+		<div class="container">
+			<div class="control-group">
+				<h2>Please select the information you want to send out:</h3>
+		
+					<form>
+						<label class="control control--checkbox"><h4>Phone Number</h4>
+	  						<input id = "phone" type="checkbox" name="way" value="phone">
+	  						<div class="control__indicator"></div>
+    					</label>
+    					<label class="control control--checkbox"><h4>Email Address</h4>
+  							<input id = "email" type="checkbox" name="way" value="email">
+  							<div class="control__indicator"></div>
+    					</label>
+    					<label class="control control--checkbox"><h4>Facebook</h4>
+	  						<input id = "facebook" type="checkbox" name="way" value="facebook">
+	  						<div class="control__indicator"></div>
+    					</label>
+    					<label class="control control--checkbox"><h4>LinkedIn</h4>
+	  						<input id = "linkedin" type="checkbox" name="way" value="linkedin">
+	  						<div class="control__indicator"></div>
+    					</label>
+    					<label class="control control--checkbox"><h4>WeChat</h4>
+	  						<input id = "wechat" type="checkbox" name="way" value="wechat">
+	  						<div class="control__indicator"></div>
+    					</label>
+    					<label class="control control--checkbox"><h4>Instagram</h4>
+	  						<input id = "instagram" type="checkbox" name="way" value="instagram">
+	  						<div class="control__indicator"></div>
+    					</label>
+  				<!--<button class="click_button" onclick="checkFunc()">OK</button> -->
+					</form>
+				</div>
+		</div>
 	</main>
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

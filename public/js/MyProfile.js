@@ -46,10 +46,10 @@ function showFB(event){
 }
 
 function backToIndex() {
-    var url = window.location.href;
-    var index = url.indexOf("/my-profile/");
-    var idStr = url.substring(index + 12);
-    window.location.href = "/?id=" + idStr;
+    //var url = window.location.href;
+    //var index = url.indexOf("/my-profile/");
+    //var idStr = url.substring(index + 12);
+    window.location.href = "/";
 }
 
 function editProfile() {

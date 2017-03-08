@@ -34,10 +34,18 @@
 	</nav>
 	<main>
 		<h3>Please select the people you want to send your information to:</h3>
-		<p id="demo"></p>
 		<ul id="result_list">
+			<li class="search_item">
+                	<div class="container">
+						<div class="control-group">
+							<label class="control control--checkbox">
+								<h5 id="demo"></h5>
+	  							<input id = "user" type="checkbox" name="user" value="">
+	  							<div class="control__indicator"></div>
+    						</label>
+    					</div>
+    				</div>
 			{{#each user}}
-                <li class="search_item">
                     <!--<button id="{{id}}" onclick="requestAddToContact(this)"> -->
                         <script>
                         	var addr = window.location.href;
@@ -49,7 +57,8 @@
 							//document.getElementById("demo").innerHTML = "Name: " + person_found;
 							//if(person_found.toUpperCase() == {{name}}.toUpperCase()){}
                         	if(person_found == "{{name}}"){
-                        		document.getElementById("demo").innerHTML = '<strong>{{name}}</strong>                       <input type="checkbox" name="add" value="add_ckb"> <br>';
+                        		//document.getElementById("demo").innerHTML = '<strong>{{name}}</strong>                       <input type="checkbox" name="add" value="add_ckb"> <br>';
+                        		document.getElementById("demo").innerHTML = '<img class="contact_img" hspace="10" src="{{imageURL}}">{{name}}'
                         	}
                         </script>
                         <!--

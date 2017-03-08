@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
     <title>Edit profile</title>
 	<link rel="stylesheet" href="/css/edit_profile.css" />
+  <link rel="stylesheet" href="/css/settings.css" />
 	<script
   		src="https://code.jquery.com/jquery-3.1.1.min.js"
   		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -29,9 +30,9 @@
     <main>
         <ul id="input_thing">
             <form id="addFriendForm" role="form" method="get" action="/add">
-                <h3>Add new contact information</h3>
+                <h2 style = "text-align:center;">Add new contact information</h2>
                     <div class="form-group">
-                        <label for="name">Type of information</label>
+                        <label for="name"><h4>Type of information</h4></label>
                     
                             <input type="text" class="form-control" id="type" placeholder="Example: Phone" name="type">
                         
@@ -45,13 +46,14 @@
                         -->
                     </div>
                     <div class="form-group">
-                        <label for="usage">Usage</label>
+                        <label for="usage"><h4>Usage</h4></label>
                             <input type="text" class="form-control" id="usage" placeholder="Example: Home" name="usage">
                     </div>
                     <div class="form-group">
-                        <label for="content">Content</label>
+                        <label for="content"><h4>Content</h4></label>
                             <input type="text" class="form-control" id="content" placeholder="Example: 123-456-789" name="content">
                     </div>
+                    <br>
                 <input type="submit" id="submitBtn" class="btn btn-default" value="Add"></input>
             </form>
         </ul>
