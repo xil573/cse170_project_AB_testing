@@ -9,6 +9,7 @@
   		src="https://code.jquery.com/jquery-3.1.1.min.js"
   		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   		crossorigin="anonymous"></script>
+  	<script src="/js/CreateAccount.js"></script>
 </head>
 <body>
 	<nav id="nav_bar">
@@ -29,23 +30,24 @@
 	</nav>
 	<main>
 		<ul id="search_package">
-			<li>
-				<input id="user_name" type="text" name="" placeholder="User name">
-			</li>
-			<li>
-				<input id="user_pass" type="password" name="" placeholder="Password">
-			</li>
-			<li>
-				<input id="user_conf_pass" type="password" name="" placeholder="Confirm your password">
-			</li>
-			<li>
-				<button id="create_new_button" class="button" onclick="gotoMainPage()">
-					<strong>Create</strong>
-				</button>
-			</li>
+			<form id="create_new_user" role="form" method="get" action="/new-user">
+				<li>
+					<input id="user_name" type="text" name="user_name" placeholder="User name">
+				</li>
+				<li>
+					<input id="user_pass" type="password" name="user_pass" placeholder="Password">
+				</li>
+				<li>
+					<input id="user_conf_pass" type="password" name="user_conf_pass" placeholder="Confirm your password">
+				</li>
+				<li>
+					<button id="create_new_button" class="button" onclick="gotoMainPage()">
+						<strong>Create</strong>
+					</button>
+				</li>
+			</form>
 		</ul>
 	</main>
-    <script src="/js/CreateAccount.js"></script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

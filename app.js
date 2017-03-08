@@ -25,6 +25,7 @@ var done = require('./routes/done');
 var create_new_acc = require('./routes/createNewAcc');
 var edit_profile = require('./routes/editProfile');
 var add = require('./routes/editProfile');
+var newUser = require('./routes/createNewAcc');
 // Example route
 // var user = require('./routes/user');
 
@@ -70,7 +71,7 @@ app.get('/done', done.view);
 app.get('/create-account', create_new_acc.view);
 app.get('/edit-profile', edit_profile.view);
 app.get('/add', add.addInfo);
-
+app.get('/new-user', newUser.createNewUser);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

@@ -1,5 +1,4 @@
 var friends = require('../people.json');
-
 /*
  * GET home page.
  */
@@ -11,5 +10,6 @@ exports.view = function (req, res) {
 
 exports.verb = function (req, res) {
 	friends["verb"] = true;
+	var username = req.params.user_name;
 	res.render('index', friends);
 };

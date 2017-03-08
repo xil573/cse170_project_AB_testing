@@ -58,7 +58,9 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 				</button>
 			</li>
 			<li id="name">
-				<strong id = "name">Xindi</strong>
+				{{#each users}}
+				<strong id = "name">{{username}}</strong>
+				{{/each}}
 			</li>
 			<li id="another_folder" class="side_bar_folder">
 				<!--
@@ -150,7 +152,9 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			</li>
 		-->
 			<li id="name">
-				<strong id = "name">Xindi</strong>
+				{{#each users}}
+				<strong id = "name">{{username}}</strong>
+				{{/each}}
 			</li>
 			<li id="another_folder" class="side_bar_folder">
 				

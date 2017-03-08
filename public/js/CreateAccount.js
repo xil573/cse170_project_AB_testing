@@ -15,7 +15,7 @@
         	alert("Confirmation password dosen't match!");
         }else{
         	alert("You have succeffully created an Exchange account!");
-            window.location.href = "/";
+            //window.location.href = "/";
         }
     }
 }
