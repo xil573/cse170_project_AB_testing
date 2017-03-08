@@ -1,18 +1,4 @@
-﻿function preprocess() {
-    //var url = window.location.href;
-    //if (url.includes("id")) {
-     //   console.log(url);
-    //} else {
-    //    window.location.href = "login";
-    //}
-}
-//window.onpaint = preprocess();
-
-//function toggleSidebar() {
-    
-//}
-
-function toggleNewContact() {
+﻿function toggleNewContact() {
     var $sideBar = $("#side_bar");
     var $sideBarMask = $("#side_bar_mask");
     var $topBar = $("#top_bar");
@@ -28,6 +14,7 @@ function toggleNewContact() {
         $topBar.addClass("active");
         $topBarMask.fadeIn("fast");
     }
+    //$("#new_contact_button").click(profile_func);
 }
 
 function changePageToAdd() {
@@ -43,7 +30,13 @@ function changePageToMyProfile() {
     //var index = url.indexOf("?id=");
     //var idStr = url.substring(index + 4);
     //window.location.href = "my-profile/" + idStr;
+    $("#album_face_border").click(profile_func);
+    $("#view_profile").click(profile_func);
     window.location.href = "my-profile";
+}
+
+function profile_func(event){
+    ga('send', 'event', 'profile', 'click');
 }
 
 function changePageToGroups() {

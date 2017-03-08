@@ -7,10 +7,11 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-
-	$("#phone").click(showPhone);
-	$("#email").click(showEmail);
-    $("#fb").click(showFB);  
+    $("#like").click(like_func);
+    $(".likeCtr button").click(like_func);
+	//$("#phone").click(showPhone);
+	//$("#email").click(showEmail);
+    //$("#fb").click(showFB);  
 }
 
 function showPhone(event){

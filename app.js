@@ -52,6 +52,8 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
+app.get('/versionB', index.verb);
+
 app.get('/my-profile', my_profile.view);
 app.get('/settings', settings.view);
 app.get('/groups', groups.view);
@@ -68,10 +70,7 @@ app.get('/done', done.view);
 app.get('/create-account', create_new_acc.view);
 app.get('/edit-profile', edit_profile.view);
 app.get('/add', add.addInfo);
-//app.get('/project/:id', project.projectInfo);
-//app.get('/palette', palette.randomPalette);
-// Example route
-// app.get('/users', user.list);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
