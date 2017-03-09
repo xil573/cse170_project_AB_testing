@@ -56,7 +56,7 @@
 							var person_found = first_name + " " + last_name;
 							//document.getElementById("demo").innerHTML = "Name: " + person_found;
 							//if(person_found.toUpperCase() == {{name}}.toUpperCase()){}
-                        	if(person_found == "{{name}}"){
+                        	if(person_found.indexOf("{{name}}") >= 0){
                         		//document.getElementById("demo").innerHTML = '<strong>{{name}}</strong>                       <input type="checkbox" name="add" value="add_ckb"> <br>';
                         		document.getElementById("demo").innerHTML = '<img class="contact_img" hspace="10" src="{{imageURL}}">{{name}}'
                         	}

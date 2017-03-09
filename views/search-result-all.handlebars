@@ -42,15 +42,16 @@
 			document.getElementById("demo").innerHTML = '<strong><h4>There is no result for</h4></strong>' + res_name;
 		</script>
 		<ul id="result_list">
-			{{#each user}}
 			<div class="container">
 				<div class="control-group">
+					{{#each user}}
 					<label class="control control--checkbox">
 						<h5><img class="contact_img" hspace="10" src="{{imageURL}}">{{name}}</h5>
 	  					<input id = "user" type="checkbox" name="user" value="">
 	  					<div class="control__indicator"></div>
     				</label>
-<!--
+    				{{/each}}
+<!--				
                 <li class="search_item">
                         <img class="contact_img" src="{{imageURL}}">
                         <h4>{{name}}</h4>                       
@@ -59,7 +60,7 @@
             -->
         		</div>
         	</div>
-            {{/each}}
+            
 		</ul>
 	</main>
 	<script>

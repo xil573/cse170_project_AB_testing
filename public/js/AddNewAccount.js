@@ -177,9 +177,10 @@ function searchResult() {
             "imageURL": "http://uploads.edubilla.com/awards-winners/92/b4/allen-newell.jpg"
         }
     ]
+
     for(var i in users){
         var p = users[i].name;
-        if(p == name){
+        if(name.indexOf(p) >= 0){
             console.log("found!!!" + p);
             window.location.href = "search_result?name=" + name;
             break;
