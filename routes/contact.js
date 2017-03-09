@@ -7,12 +7,9 @@ exports.view = function (req, res) {
 
 	for (i = 0; i < data.person.length; i++){
       if (data.person[i].id == id){
-            var conName = data.person[i].name;
-            var conPhone = data.person[i].phone;
-            var conEmail = data.person[i].email;
-            var conImage = data.person[i].imageURL;
-            //var contact = "Name : " + data.person[i].name + "\n" + "Phone : " + data.person[i].phone + "\n" + "Email : " + data.person[i].email;
-            //console.log(contact);
+            
+            var contact = "Name : " + data.person[i].name + "\n" + "Phone : " + data.person[i].phone + "\n" + "Email : " + data.person[i].email;
+            console.log(contact);
    
         }
     }
@@ -20,9 +17,6 @@ exports.view = function (req, res) {
     //var contact = JSON.stringify(data);
     //console.log(string);
     res.render('contact', {
-    	'name': conName,
-        'phone': conPhone,
-        'email': conEmail,
-        'image': conImage
+    	'contactName': contact
     });
 };
